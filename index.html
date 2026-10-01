@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Űrlap Weboldal">
+    <meta name="keywords" content="Űrlap, Weboldal">
+    <link rel="stylesheet" href="style.css">
+    <title>Albert Simon</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Űrlap</h1>
+        </header>
+        <nav>
+            <li><a href="index.html">Menü</a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </nav>
+        <article>
+            <form action="feldolgoz.php">
+                <fieldset>
+                    <legend>Személyes adatok</legend>
+                    <div class="block">
+                        <label for="nev">Név:</label>
+                        <input type="text" name="nev" id="nev" placeholder="Vezetéknév Keresztnév">
+                    </div>
+                    <div class="block">
+                        <label for="psw">Jelszó:</label>
+                        <input type="password" name="psw" id="psw" placeholder="Jelszó">
+                    </div>
+                    <div class="block">
+                        <label for="Email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Email cím">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Nem</legend>
+                    <label for="ffi">Férfi</label>
+                    <input type="radio" name="nem" id="ffi">
+                    <label for="no">Férfi</label>
+                    <input type="radio" name="nem" id="no">
+                </fieldset>
+                <fieldset>
+                    <legend>Hobbi - többet is kijelölhetsz</legend>
+                    <label for="bic">Bicajozás</label>
+                    <input type="checkbox" name="hobbi" id="bic">
+                    <label for="fot">Fotózás</label>
+                    <input type="checkbox" name="hobbi" id="fot">
+                    <label for="kos">Kosár</label>
+                    <input type="checkbox" name="hobbi" id="kos">
+                </fieldset>
+                <div class="block">
+                    <input type="submit" value="Mentés">
+                </div>
+            </form>
+        </article>
+        <footer>Albert Simon</footer>
+    </main>
+</body>
+
+</html>
